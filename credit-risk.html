@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Risk Classifier</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Credit Risk Predictor</h1>
+  <p>Enter loan details to estimate default risk.</p>
+
+  <form id="riskForm">
+    <label>Loan Amount: <input type="number" step="any" name="loan_amnt" required></label>
+    <label>Term (months): <input type="number" name="term" required></label>
+    <label>Interest Rate: <input type="number" step="any" name="int_rate" required></label>
+    <!-- Add more input fields... -->
+    
+    <button type="submit">Predict Risk</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="js/credit-risk.js"></script>
+</body>
+</html>
